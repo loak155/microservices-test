@@ -1,0 +1,56 @@
+syntax = "proto3";
+
+package user;
+
+option go_package = "./pb";
+
+service UserService {
+    rpc Signup(SignupRequest) returns (SignupResponse);
+    rpc Login(LoginRequest) returns (LoginResponse);
+    rpc Logout(LogoutRequest) returns (LogoutResponse);
+    rpc Csrf(CsrfRequest) returns (CsrfResponse);
+}
+
+message User {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+  string password = 4;
+}
+
+message SignupRequest {
+  string username = 1;
+  string email = 2;
+  string password = 3;
+}
+
+message SignupResponse {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+}
+
+message LoginRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  int32 user_id = 1;
+  string token = 2;
+}
+
+message LogoutRequest {
+  string token = 1;
+}
+
+message LogoutResponse {
+  bool success = 1;
+}
+
+message CsrfRequest {
+}
+
+message CsrfResponse {
+  string token = 1;
+}
