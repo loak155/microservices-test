@@ -1,6 +1,10 @@
 package main
 
 import (
+	"auth-service/client"
+	"auth-service/router"
+	"auth-service/usecase"
+	"auth-service/utils"
 	"context"
 	"fmt"
 	"log"
@@ -9,11 +13,7 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-	"user-service/db"
-	"user-service/repository"
-	"user-service/router"
-	"user-service/usecase"
-	"user-service/validator"
+	"time"
 
 	"github.com/joho/godotenv"
 	"google.golang.org/grpc"
@@ -36,11 +36,10 @@ func main() {
 		<-ctx.Done()
 	}()
 
-	db := db.NewDB()
-	userValidator := validator.NewUserValidator()
-	userRepository := repository.NewUserRepository(db)
-	userUsecase := usecase.NewUserUsecase(userRepository, userValidator)
-	router.NewUserGRPCServer(server, userUsecase)
+	userGRPCClient, err := client.NewUserGRPCClient()
+	jwtManager := utils.NewJwtManager(os.Getenv("SECRET_KEY"), time.Hour*12)
+	authUsecase := usecase.NewAuthUsecase(userGRPCClient, jwtManager)
+	router.NewAuthGRPCServer(server, authUsecase)
 
 	listener, err := net.Listen("tcp", fmt.Sprintf("%s:%s", os.Getenv("HOST"), os.Getenv("PORT")))
 	if err != nil {
