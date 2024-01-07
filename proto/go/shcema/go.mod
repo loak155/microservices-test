@@ -1,4 +1,4 @@
-module schema
+module github.com/loak155/schema
 
 go 1.21.5
 
