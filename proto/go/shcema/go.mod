@@ -1,4 +1,4 @@
-module github.com/loak155/schema
+module github.com/loak155/microservices
 
 go 1.21.5
 
