@@ -1,8 +1,0 @@
-github.com/golang-jwt/jwt/v4 v4.5.0 h1:7cYmW1XlMY7h7ii7UhUyChSgS5wUJEnm9uZVTGqOWzg=
-github.com/golang-jwt/jwt/v4 v4.5.0/go.mod h1:m21LjoU+eqJr34lmDMbreY2eSTRJ1cv77w39/MY0Ch0=
-github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
-github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
-github.com/loak155/microservices v0.0.0-20240107145015-9b043631eb8d h1:X7B7xOt3Y8l5RieVz43lqDoasAFNJbbshI9PDGhGJfQ=
-github.com/loak155/microservices v0.0.0-20240107145015-9b043631eb8d/go.mod h1:BN1XhKCdgw4NXRG1gMSeXGQlEEs8y1cF6otXbeHRXNw=
-github.com/loak155/microservices-proto v0.0.0-20240108091303-ec4d89809736 h1:31gSSmWbN61gHHTxBiXrx3oKP5fcm/7aL0RYcOtcp/A=
-github.com/loak155/microservices-proto v0.0.0-20240108091303-ec4d89809736/go.mod h1:x20LJGJ2BSZNwK7c9Hcwm5tbWRwTbZoUawC4uVNpaBA=

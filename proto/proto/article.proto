@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package article;
 
-option go_package = "/go";
+option go_package = "/pb";
 
 service ArticleService {
   rpc CreateArticle(CreateArticleRequest) returns (CreateArticleResponse);

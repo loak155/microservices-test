@@ -1,7 +1,7 @@
 package repository
 
 import (
-	"user-service/domain"
+	"github.com/loak155/microservices/services/user-service/domain"
 
 	"gorm.io/gorm"
 )

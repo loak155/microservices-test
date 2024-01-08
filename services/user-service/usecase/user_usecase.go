@@ -1,9 +1,9 @@
 package usecase
 
 import (
-	"user-service/domain"
-	"user-service/repository"
-	"user-service/validator"
+	"github.com/loak155/microservices/services/user-service/domain"
+	"github.com/loak155/microservices/services/user-service/repository"
+	"github.com/loak155/microservices/services/user-service/validator"
 
 	"golang.org/x/crypto/bcrypt"
 )

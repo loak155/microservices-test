@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "/go";
+option go_package = "/pb";
 
 service UserService {
   rpc GenerateToken(GenerateTokenRequest) returns (GenerateTokenResponse);

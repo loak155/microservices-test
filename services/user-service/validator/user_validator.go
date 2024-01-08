@@ -1,7 +1,7 @@
 package validator
 
 import (
-	"user-service/domain"
+	"github.com/loak155/microservices/services/user-service/domain"
 
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"

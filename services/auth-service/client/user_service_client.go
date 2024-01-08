@@ -4,7 +4,9 @@ import (
 	"fmt"
 	"os"
 
-	pb "github.com/loak155/microservices-proto/go"
+	// pb "github.com/loak155/microservices-proto/go"
+	// pb "github.com/loak155/microservices/proto/go"
+	"github.com/loak155/microservices/services/user-service/pb"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )

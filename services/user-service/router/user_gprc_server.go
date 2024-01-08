@@ -2,9 +2,11 @@ package router
 
 import (
 	"context"
-	"user-service/domain"
-	"user-service/pb"
-	"user-service/usecase"
+
+	// pb "github.com/loak155/microservices/proto/go"
+	"github.com/loak155/microservices/services/user-service/domain"
+	"github.com/loak155/microservices/services/user-service/pb"
+	"github.com/loak155/microservices/services/user-service/usecase"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"

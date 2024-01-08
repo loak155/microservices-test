@@ -7,7 +7,9 @@ import (
 
 	"auth-service/utils"
 
-	pb "github.com/loak155/microservices-proto/go"
+	"github.com/loak155/microservices/services/user-service/pb"
+	// pb "github.com/loak155/microservices-proto/go"
+	// pb "github.com/loak155/microservices/proto/go"
 )
 
 type IAuthUsecase interface {
