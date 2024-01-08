@@ -8,7 +8,7 @@ import (
 	"google.golang.org/grpc/reflection"
 
 	// pb "github.com/loak155/microservices/proto/go/shcema"
-	pb "github.com/loak155/microservices"
+	pb "github.com/loak155/microservices-proto/go"
 )
 
 type authGRPCServer struct {
